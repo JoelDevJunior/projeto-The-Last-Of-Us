@@ -1,2 +1,2 @@
-# ptojeto-The-Last-Of-Us
+# projeto-The-Last-of-Us
 projeto elaborado pela Kenzie Academy
