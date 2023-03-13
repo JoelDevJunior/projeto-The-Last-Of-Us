@@ -1,0 +1,337 @@
+@charset "UTF-8";
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap');
+
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  :root {
+    --color-primary: #ce3029;
+    --color-secondary: #8e0000;
+    --color-grey-1: #474747;
+    --color-grey-2: #ffffff;
+    --color-grey-3: #000000;
+    --text-color-1: #c7c7c7cc;
+  }
+  
+  body {
+    font-family: "Iceland", sans-serif;
+    width: 98.8vw;
+    height: 100vh;
+  }
+
+  /* CONFIGURAÇÕES GERAIS */
+
+    .flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  }
+  
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+  }
+  
+    .container {
+        width: 87vw;
+        margin: 0 auto;
+        height: 86%;
+  }
+  
+  /* TELA 01 */
+  
+  .home {
+    height: 945px;
+    background-image: url(../imagens/background.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+  }
+  
+  header > figure > img {
+    height: 144px;
+    width: 254px;
+  }
+  
+  nav {
+    width: 70%;
+  }
+  
+  nav > ul {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  ul > li > a {
+    color: var(--color-grey-2);
+    font-family: Iceland;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+  }
+  
+  ul > li > a:hover {
+    font-weight: 600;
+  }
+
+  #SegundoMenu {
+    width: 80%;
+    padding: 2% 0% 0% 7%;
+  }
+  #SegundoMenu > nav > ul {
+    width: 70%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main {
+    width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  h1 {
+    width: 668px;
+    font-family: Iceland;
+    font-size: 92px;
+    font-weight: 400;
+    line-height: 89px;
+    text-align: left;
+    color: var(--color-grey-2);
+  }
+  
+  main > p {
+    width: 506px;
+    font-family: Actor;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: left;
+    color: var(--text-color-1);
+  }
+  
+  button {
+    height: 46px;
+    width: 180px;
+    left: 5002px;
+    top: 23px;
+    color: var(--color-grey-2);
+    margin: 10px;
+    font-family: Iceland;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .active {
+    background-color: var(--color-secondary);
+  }
+  
+  .active:hover {
+    border: 2px solid var(--color-grey-2);
+  }
+  
+  .inactive {
+    background-color: var(--color-grey-1);
+  }
+  
+  .inactive:hover {
+    border: 2px solid var(--color-grey-2);
+  }
+  
+  main section {
+    margin-top: 100px;
+  }
+  
+  #inside{
+    height: 47px;
+    width: 100px;
+    left: 5446px;
+    font-family: Iceland;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 47px;
+    text-align: right;
+    color: var(--color-grey-2);
+  }
+
+
+  section  ul {
+    width: 800px;
+  }
+  
+  #survival {
+    height: 139px;
+    width: 261px;
+    background-image: url(../imagens/dentro/survival.svg);
+  }
+
+  #relationship {
+    height: 139px;
+    width: 261px;
+    background-image: url(../imagens/dentro/relationship.svg);
+  }
+
+  #adventure {
+    height: 139px;
+    width: 261px;
+    background-image: url(../imagens/dentro/adventure.svg);
+  }
+
+  .centro {
+    text-align: center;
+    padding: 64px 0px 0px 0px;
+    color: #ffffff;
+  }
+  
+  /* TELA 02 */
+  .episodes {
+    height: 935px;
+    background-image: url(../imagens/backgroundEpisodes.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+  }
+  
+  .posts {
+    height: 546px;
+    width: 479px;
+    margin-top: 80px;
+    padding: 5px;
+    text-align: justify;
+  }
+  
+  .posts > p {
+    color: var(--color-grey-2);
+    font-family: Iceland;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+    
+  }
+  
+  .episodes-list {
+    height: 762px;
+    width: 671px;
+    margin: 120px auto auto auto;
+    overflow: auto;
+  }
+  
+  .card {
+    height: 182px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    background-color: var(--color-grey-3);
+  }
+  
+  .episodes-list::-webkit-scrollbar {
+    background-color: var(--color-secondary); /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid black; /* creates padding around scroll thumb */
+    height: 30px;
+  }
+  
+  .card > img {
+    height: 120px;
+    width: 250px;
+    border-radius: 12px;
+  }
+  
+  .card-text {
+    width: 60%;
+    height: 80%;
+    margin: 20px;
+  }
+  
+  /*EPISODES*/
+  .card-text > h4 {
+    height: 30px;
+    font-family: Darker Grotesque;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: var(--color-grey-2);
+  }
+  
+  .card-text > p {
+    height: 88px;
+    width: 300px;
+    left: 5690px;
+    top: 639px;
+    border-radius: nullpx;
+    font-family: Darker Grotesque;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--color-grey-2);
+  }
+  
+  /* TELA 03 */
+  
+  footer {
+    height: 377px;
+    background: linear-gradient(180deg, #000000, #950202 289.06%);
+  }
+  
+  footer > figure > img {
+    height: 140px;
+    width: 140px;
+  }
+  
+    section > h3 {
+        height: 47px;
+        width: 668px;
+        left: 5446px;
+        font-family: Iceland;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 47px;
+        text-align: right;
+        color: var(--color-grey-2);
+  }
+  
+    section > h2 {
+    height: 31px;
+    width: 449px;
+    font-family: Iceland;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 31px;
+    text-align: right;
+    color: var(--color-grey-2);
+    margin: 0 auto;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
